@@ -41,6 +41,7 @@ use the html element to display the component in your project. <br>
 ``` <chat-bot (outputData)="getData($event)"></chat-bot> ```
 
 ## @output
+All the outputs are emitted from the component and displayed in the console.
 
 ```
 getData(event) 
