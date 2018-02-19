@@ -1,0 +1,33 @@
+<div class="chatWrap float-lg-left float-sm-left col-lg-3 col-12 col-sm-4 p-0">
+	<div class="chatHeader col-12 bg-primary text-light p-2 ">
+		Ask Mister
+	</div>
+	<div class="chatBox col-12 bg-light">
+		<ul *ngFor="let msg of message" class="text-light list-unstyled bg-info p-1" id="botMessage">
+			<li>
+				<b>{{msg}}</b>
+			</li>
+		</ul>
+	</div>
+	<div class="text col-12 bg-danger p-0">
+		<input type="text" class="border w-4 col-12 chatText messageInput" id="messageInput" placeholder="typeHere and press enter"
+		 [(ngModel)]="mesg">
+		<button class="col-6 sendIcon" (click)="sendMessage()">Send</button><button class="col-6 calIcon" (click)="triggerCal()">Calculator</button>
+	</div>
+</div>
+<!-- chat wrap close -->
+
+<div class="calculatorWrap float-lg-left float-sm-left col-lg-3 col-12 col-sm-4 bg-primary text-light flex p-2" [class.showCal]="isShow">
+	<label for="loanamount">loanamount</label><br>
+	<input type="text" [(ngModel)]="p" id="loanAmount"><br>
+	<label for="interest">Interest</label><br>
+	<input type="text" id="interest" [(ngModel)]="r"><br>
+	<label for="tenure">Tenure</label><br>
+	<input type="text" id="tenure" [(ngModel)]="n"><br>
+	<label for="EMi">EMi</label><br><input type="text" class="bg-secondary border-0 text-light loamEmi" value={{emi}} disabled><br>
+	<label> Interest Amount</label><br><input type="text" class="bg-secondary border-0 text-light" value={{interest}}
+	 disabled><br>
+	<label for="totalAmount">Total Amount</label><br><input type="text" class="bg-secondary border-0 text-light" value={{grandTotal}}
+	 disabled><br>
+	<button class="btn mt-2 col-12" (click)="getCal()">Submit</button>
+</div>

@@ -1,0 +1,9 @@
+.chatBox {
+      height: 250px;
+      display: flex;
+      flex-direction: column-reverse;
+}
+.showCal{
+  display: none;
+}
+
