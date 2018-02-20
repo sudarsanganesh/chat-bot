@@ -30,7 +30,7 @@ Download the chat-bot folder and use it in your project.
 
 ## Component Functionalities 
 
-###  Message Box
+###  Chat Bot
 This is a traditional chat box where the conversation between the user and the bot takes place. The user has to type the message and click
 send button or press enter to send the message.<br>
 "HostListner" directive has been used in this component to trigger the key press event. <br>
@@ -39,6 +39,7 @@ By default some basic bot reply is given in the program which is stored in an ar
 For example<br>
 When the user gives "google" as input message in the chat box, the bot replies with "www.google.com" The developer can add some more 
 keywords and links to the array & based on the condition the response is received.
+
 
 ### Calculator 
 The component has a "Calculator" button which triggers the calculator as a pop up box. The user must give three values 
