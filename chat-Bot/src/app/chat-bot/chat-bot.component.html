@@ -11,7 +11,13 @@
 	</div>
 	<div class="text col-12 bg-danger p-0">
 		<input type="text" class="border w-4 col-12 chatText messageInput" id="messageInput" placeholder="typeHere and press enter"
-		 [(ngModel)]="mesg">
+		 [(ngModel)]="mesg" list="msgOpt">
+		<datalist id="msgOpt">
+       
+       		<option>loan</option>
+		<option>Recurring Deposit</option>
+		<option>Fixed Deposit</option>
+     </datalist>
 		<button class="col-6 sendIcon" (click)="sendMessage()">Send</button><button class="col-6 calIcon" (click)="triggerCal()">Calculator</button>
 	</div>
 </div>
