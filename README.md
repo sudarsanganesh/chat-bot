@@ -8,7 +8,7 @@ information from the website instead of manually searching the contents in the w
 ![ss](https://user-images.githubusercontent.com/36465905/36368019-5aa571dc-157b-11e8-9b52-444be46f32b4.jpg)
 
 
-View the [Demo](https://stackblitz.com/edit/angular-uyhgrt?embed=1&file=app/app.component.html) in stackblitz
+View the [Demo](https://stackblitz.com/edit/angular-msvjdc?embed=1&file=app/chat-bot/chat-bot.component.ts) in stackblitz
 
 ## Technologies used
 HTML, CSS, Bootstrap, Angular 5
