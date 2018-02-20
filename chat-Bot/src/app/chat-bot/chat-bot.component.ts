@@ -26,8 +26,7 @@ export class ChatBotComponent {
   reply: string[] = ['Hello! How can i help you', 'Home Loan or Personal Loan or car loan?',]
   red = true;
   mesg: string;
-  google: string = "google";
-  btn;
+  
   
   
   /* calculate EMI */
@@ -46,7 +45,8 @@ export class ChatBotComponent {
 
   /* Message events */
 
-  insert() {
+ insert() {
+   
     if (this.mesg == "") {
     } else {
       if (this.mesg == "hi") {
@@ -58,8 +58,18 @@ export class ChatBotComponent {
         this.message.unshift(this.reply[1]);
         this.mesg = "";
       }
-      else {
+      else if(this.mesg == "RD" || this.mesg == "rd" || this.mesg == "Recurring Deposit"){
         this.message.unshift(this.mesg);
+        this.message.unshift(this.reply[2]);
+        this.mesg = "";
+      }
+      else if(this.mesg == "FD" || this.mesg == "fd" || this.mesg == "Fixed Deposit"){
+        this.message.unshift(this.mesg);
+        this.message.unshift(this.reply[3]);
+        this.mesg = "";
+      }            
+      else {
+        this.message.unshift("click the chat to get the list of queries");
         this.mesg = "";
       }
        
