@@ -35,10 +35,11 @@ This is a traditional chat box where the conversation between the user and the b
 send button or press enter to send the message.<br>
 "HostListner" directive has been used in this component to trigger the key press event. <br>
 
+### Communicate with Chat Bot
 By default some basic bot reply is given in the program which is stored in an array.<br>
 For example<br>
-When the user gives "google" as input message in the chat box, the bot replies with "www.google.com" The developer can add some more 
-keywords and links to the array & based on the condition the response is received.
+When the user gives "hi" as input message in the chat box, the bot replies with "Hello! How can i help you" The developer can add some more keywords and links to the array & based on the condition the response is received.
+#### Keywords : hi,loan
 
 
 ### Calculator 
