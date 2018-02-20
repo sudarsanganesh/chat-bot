@@ -10,6 +10,21 @@ information from the website instead of manually searching the contents in the w
 
 View the [Demo](https://stackblitz.com/edit/angular-uyhgrt?embed=1&file=app/app.component.html) in stackblitz
 
+## Using the complete angular project
+Download the chat-bot folder and use it in your project.
+
+### Installing
+
+```
+> npm install
+```
+
+### Run server
+
+```
+> ng serve
+```
+
 ## Component Functionalities 
 
 ###  Message Box
@@ -39,6 +54,8 @@ After giving the input, the submit button has to be pressed to get three Outputs
 use the html element to display the component in your project. <br>
 
 ``` <chat-bot (outputData)="getData($event)"></chat-bot> ```
+
+outputData is a variable that wil take input from the user are wil emit ouput.
 
 ## @output
 All the outputs are emitted from the component and displayed in the console.
