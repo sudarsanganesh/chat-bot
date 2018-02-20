@@ -10,6 +10,9 @@ information from the website instead of manually searching the contents in the w
 
 View the [Demo](https://stackblitz.com/edit/angular-uyhgrt?embed=1&file=app/app.component.html) in stackblitz
 
+## Technologies used
+HTML, CSS, Bootstrap, Angular 4
+
 ## Using the complete angular project
 Download the chat-bot folder and use it in your project.
 
