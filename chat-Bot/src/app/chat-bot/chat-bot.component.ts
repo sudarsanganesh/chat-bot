@@ -23,7 +23,7 @@ export class ChatBotComponent {
   @Output() outputData = new EventEmitter();
   isShow=false;
   message: string[] = [];
-  reply: string[] = ['www.google.com', 'www.w3schools.com']
+  reply: string[] = ['Hello! How can i help you', 'Home Loan or Personal Loan or car loan?',]
   red = true;
   mesg: string;
   google: string = "google";
@@ -49,13 +49,20 @@ export class ChatBotComponent {
   insert() {
     if (this.mesg == "") {
     } else {
-      if (this.mesg == "google") {
+      if (this.mesg == "hi") {
         this.message.unshift(this.mesg);
         this.message.unshift(this.reply[0]);
-      } else {
+        this.mesg = "";
+      } else if(this.mesg == "loan"){
+        this.message.unshift(this.mesg);
+        this.message.unshift(this.reply[1]);
+        this.mesg = "";
+      }
+      else {
         this.message.unshift(this.mesg);
         this.mesg = "";
       }
+       
     }
   }
 
