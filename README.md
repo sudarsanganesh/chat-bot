@@ -14,7 +14,7 @@ View the [Demo](https://stackblitz.com/edit/angular-msvjdc?embed=1&file=app/chat
 HTML, CSS, Bootstrap, Angular 5
 
 ## Using the complete angular project
-Download the chat-bot folder and use it in your project.
+
 
 ### Installing
 
